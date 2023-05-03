@@ -32,11 +32,16 @@ body: :-webkit-scrollbar {
     height: 10px;
     background-color: lightblue;
 }
-body:hover::-webkit-scrollbar {
-  display: initial;  
+
+.hideScroll {
+  overflow: auto;
+  height: 100px;
+  scrollbar-width: none; /*Firefox*/
 }
-body::-webkit-scrollbar-thumb {
-  background-color: #09C;
+
+/*Webkit*/
+.hideScroll::-webkit-scrollbar {
+  width: 0;
 }
 
 #profilePicture, #profilePicture img {
