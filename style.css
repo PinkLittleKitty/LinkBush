@@ -26,13 +26,6 @@ body {
     position: relative;
 }
 
-body: {
-    display: none;
-    width: 10px;
-    height: 10px;
-    background-color: lightblue;
-}
-
 .hideScroll {
   overflow: auto;
   height: 100px;
