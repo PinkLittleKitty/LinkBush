@@ -157,6 +157,23 @@ body {
     background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+.footerText {
+    
+    font-family: var(--font);
+    display: block;
+    margin: 100px auto;
+    position: relative;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.539);
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px; /* 17px */
+    text-decoration: none;
+}
 
 
 /*-------------------------animaciones-----------------------*/
