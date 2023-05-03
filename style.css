@@ -16,13 +16,27 @@ body {
     background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
     /* background-image: url('https://bit.ly/3nFVqJh'); */
     opacity: 0;
-    overflow-x: no;
+    overflow: auto;
+    overflow: overlay;
     overflow:-moz-scrollbars-vertical;
     animation: 1s ease-out var(--delay) 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
     animation-fill-mode: forwards;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+body: :-webkit-scrollbar {
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: lightblue;
+}
+body:hover::-webkit-scrollbar {
+  display: initial;  
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #09C;
 }
 
 #profilePicture, #profilePicture img {
