@@ -16,20 +16,14 @@ body {
     background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
     /* background-image: url('https://bit.ly/3nFVqJh'); */
     opacity: 0;
-    overflow: auto;
-    overflow: overlay;
-    overflow:-moz-scrollbars-vertical;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
     animation: 1s ease-out var(--delay) 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
     animation-fill-mode: forwards;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
-
-.hideScroll {
-  overflow: auto;
-  height: 100px;
-  scrollbar-width: none; /*Firefox*/
 }
 
 /*Webkit*/
